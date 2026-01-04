@@ -1,54 +1,98 @@
-body {
-    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
-    background-color: #f7f6fb; /* pastel lavender */
-    margin: 0;
+* {
+    box-sizing: border-box;
 }
 
-/* Header */
-header {
-    background-color: #cdb4db; /* pastel ungu */
-    color: #3a3a3a;
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff6ee;
+    color: #444;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #f4c6a6;
     padding: 20px;
     text-align: center;
 }
 
-/* GRID CONTAINER */
-.container {
+/* HERO */
+.hero {
+    background-color: #fdebd3;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 10px 0;
+    color: #6d4c41;
+}
+
+.hero h2 {
+    letter-spacing: 3px;
+    color: #a67c52;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* GRID SYSTEM */
+.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    gap: 30px;
+    padding: 60px 10%;
 }
 
-/* Card / Section */
-section {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    transition: transform 0.2s ease;
+.grid.two {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-section:hover {
-    transform: translateY(-5px);
+.grid.one {
+    grid-template-columns: 1fr;
 }
 
-/* Image */
+/* CARD */
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card.center {
+    text-align: center;
+}
+
+/* SOFT SECTION */
+.soft-bg {
+    background-color: #e8f1ea;
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #4a6f5b;
+}
+
+/* IMAGE */
 .foto {
-    width: 200px;
-    border-radius: 15px;
+    width: 220px;
+    border-radius: 20px;
 }
 
 .alat {
     width: 100%;
-    max-width: 300px;
-    border-radius: 15px;
+    max-width: 320px;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
+    background-color: #f4c6a6;
     text-align: center;
-    background-color: #ffc8dd; /* pastel pink */
-    color: #3a3a3a;
-    padding: 10px;
+    padding: 15px;
+    font-size: 14px;
 }

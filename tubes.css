@@ -1,35 +1,54 @@
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    background-color: #f7f6fb; /* pastel lavender */
     margin: 0;
 }
 
+/* Header */
 header {
-    background-color: #2c3e50;
-    color: white;
+    background-color: #cdb4db; /* pastel ungu */
+    color: #3a3a3a;
     padding: 20px;
     text-align: center;
 }
 
-section {
-    background: white;
-    margin: 20px;
+/* GRID CONTAINER */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
     padding: 20px;
-    border-radius: 8px;
 }
 
+/* Card / Section */
+section {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Image */
 .foto {
     width: 200px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .alat {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
 }
 
+/* Footer */
 footer {
     text-align: center;
-    background-color: #2c3e50;
-    color: white;
+    background-color: #ffc8dd; /* pastel pink */
+    color: #3a3a3a;
     padding: 10px;
 }
